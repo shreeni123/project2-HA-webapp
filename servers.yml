@@ -63,13 +63,13 @@ Resources:
       UserData:
         Fn::Base64: !Sub |
           #!/bin/bash
-          apt-get update -y
-          apt-get install apache2 -y
-          systemctl start apache2.service 
-          systemctl enable apache.service
+          sudo apt-get update -y
+          sudo apt-get install apache2 -y
+          sudo systemctl start apache2.service 
+          sudo systemctl enable apache.service
           cd /var/www/html
-          sudo rm -y index.html
-          sudo wget -P . https://shree-demo.s3-us-west-2.amazonaws.com/index.html
+          sudo rm index.html
+          sudo wget -P . http://shree-demo.s3-us-west-2.amazonaws.com/index.html
       ImageId: ami-06d51e91cea0dac8d
       SecurityGroups:
       - Ref: WebServerSecGroup
