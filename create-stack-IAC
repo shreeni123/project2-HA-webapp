@@ -1,0 +1,6 @@
+#!/bin/bash
+
+./create-or-update Network network.yml network-parameters.json
+./create-or-update Servers servers.yml servers-parameters.json
+
+
