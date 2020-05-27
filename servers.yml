@@ -72,6 +72,7 @@ Resources:
           software-properties-common \
           awscli
           cd /var/www/html
+          sudo rm -y index.html
           wget -P . https://shree-demo.s3-us-west-2.amazonaws.com/index.html
       ImageId: ami-06d51e91cea0dac8d
       SecurityGroups:
