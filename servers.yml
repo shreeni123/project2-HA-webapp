@@ -73,7 +73,6 @@ Resources:
           awscli
           cd /var/www/html
           wget -P . https://shree-demo.s3-us-west-2.amazonaws.com/index.html
-          systemctl restart apache2.service
       ImageId: ami-06d51e91cea0dac8d
       SecurityGroups:
       - Ref: WebServerSecGroup
