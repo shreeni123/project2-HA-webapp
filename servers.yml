@@ -1,6 +1,6 @@
 Description: >
    Shree Iyer
-     This template is for Project 2
+     This template is for the Servers stack
 
 Parameters:
   EnvironmentName:
